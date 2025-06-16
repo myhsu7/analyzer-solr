@@ -2,7 +2,7 @@ package analyzer.solr5.jieba;
 
 import com.huaban.analysis.jieba.JiebaSegmenter.SegMode;
 import org.apache.lucene.analysis.Tokenizer;
-import org.apache.lucene.analysis.util.TokenizerFactory;
+import org.apache.lucene.analysis.TokenizerFactory;
 import org.apache.lucene.util.AttributeFactory;
 
 import java.util.Map;

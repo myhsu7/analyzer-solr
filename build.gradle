@@ -1,26 +1,29 @@
 group = 'analyzer.solr6'
-version = '5.5.2'
+version = '9.7.0'
 apply plugin: 'java'
 apply plugin: "idea"
 
-sourceCompatibility = 1.8
+// sourceCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_21
+
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+//    testCompile group: 'junit', name: 'junit', version: '4.11'
 
-    compile("org.apache.lucene:lucene-core:5.5.2")
-    compile("org.apache.lucene:lucene-queryparser:5.5.2")
-    compile("org.apache.lucene:lucene-analyzers-common:5.5.2")
-    compile('com.huaban:jieba-analysis:1.0.2')
+    implementation("org.apache.lucene:lucene-core:9.7.0")
+    implementation("org.apache.lucene:lucene-queryparser:9.7.0")
+    //implementation("org.apache.lucene:lucene-analyzers-common:9.7.0")
+    implementation("org.apache.lucene:lucene-analysis-common:9.7.0")
+    implementation('com.huaban:jieba-analysis:1.0.2')
 //    compile("org.fnlp:fnlp-core:2.0-SNAPSHOT")
-    compile("edu.stanford.nlp:stanford-corenlp:3.5.1")
+    implementation("edu.stanford.nlp:stanford-corenlp:3.5.1")
 }
 
-task "create-dirs" << {
-    sourceSets*.java.srcDirs*.each { it.mkdirs() }
-    sourceSets*.resources.srcDirs*.each { it.mkdirs() }
-}
+//task "create-dirs" << {
+//    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+//    sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+//}
