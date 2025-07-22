@@ -1,7 +1,7 @@
 /**
  * 
  */
-package analyzer.solr5.jieba;
+package analyzer.solr9.jieba;
 
 import com.huaban.analysis.jieba.JiebaSegmenter.SegMode;
 import org.apache.lucene.analysis.Analyzer;

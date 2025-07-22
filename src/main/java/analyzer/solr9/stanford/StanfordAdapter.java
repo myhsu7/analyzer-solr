@@ -1,7 +1,7 @@
 /**
  * 
  */
-package analyzer.solr5.stanford;
+package analyzer.solr9.stanford;
 
 import edu.stanford.nlp.ie.crf.CRFClassifier;
 import edu.stanford.nlp.ling.CoreLabel;

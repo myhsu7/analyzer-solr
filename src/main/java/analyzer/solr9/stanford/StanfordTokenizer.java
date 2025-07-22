@@ -1,7 +1,7 @@
 /**
  * 
  */
-package analyzer.solr5.stanford;
+package analyzer.solr9.stanford;
 
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
